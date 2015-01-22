@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MyLabel.h"
+#import "MyTextField.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    MyTextField *textField;
+}
 
 @end
 
@@ -16,12 +20,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+    [self.view addGestureRecognizer:tapGr];
+
+    
+    textField = [[MyTextField alloc] initWithFrame:CGRectMake(15, 160, 150, 30)];
+    textField.layer.borderColor = [UIColor purpleColor].CGColor;
+    textField.layer.borderWidth = 0.5;
+    textField.placeholder = @"enter text here";
+    [self.view addSubview:textField];
+    
+    MyLabel *pressLabel = [[MyLabel alloc] initWithFrame:CGRectMake(15, 120, 150, 20)];
+    pressLabel.text = @"long press me";
+    pressLabel.inputTextView = textField;
+    [self.view addSubview:pressLabel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)tapped:(id)sender{
+    [textField resignFirstResponder];
 }
-
 @end

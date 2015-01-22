@@ -14,6 +14,8 @@
 		663499941A7096790057E30B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663499931A7096790057E30B /* Images.xcassets */; };
 		663499971A7096790057E30B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663499951A7096790057E30B /* LaunchScreen.xib */; };
 		663499A31A7096790057E30B /* LongPressMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663499A21A7096790057E30B /* LongPressMenuTests.m */; };
+		663499B11A70978C0057E30B /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 663499B01A70978C0057E30B /* MyTextField.m */; };
+		663499B41A70979B0057E30B /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 663499B31A70979B0057E30B /* MyLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		6634999C1A7096790057E30B /* LongPressMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPressMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		663499A11A7096790057E30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663499A21A7096790057E30B /* LongPressMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongPressMenuTests.m; sourceTree = "<group>"; };
+		663499AF1A70978C0057E30B /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		663499B01A70978C0057E30B /* MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
+		663499B21A70979B0057E30B /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		663499B31A70979B0057E30B /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
+		663499B51A7099910057E30B /* InputResponderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputResponderProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,11 @@
 				6634998B1A7096790057E30B /* AppDelegate.m */,
 				6634998D1A7096790057E30B /* ViewController.h */,
 				6634998E1A7096790057E30B /* ViewController.m */,
+				663499AF1A70978C0057E30B /* MyTextField.h */,
+				663499B01A70978C0057E30B /* MyTextField.m */,
+				663499B21A70979B0057E30B /* MyLabel.h */,
+				663499B31A70979B0057E30B /* MyLabel.m */,
+				663499B51A7099910057E30B /* InputResponderProtocol.h */,
 				663499901A7096790057E30B /* Main.storyboard */,
 				663499931A7096790057E30B /* Images.xcassets */,
 				663499951A7096790057E30B /* LaunchScreen.xib */,
@@ -219,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663499B41A70979B0057E30B /* MyLabel.m in Sources */,
 				6634998F1A7096790057E30B /* ViewController.m in Sources */,
 				6634998C1A7096790057E30B /* AppDelegate.m in Sources */,
 				663499891A7096790057E30B /* main.m in Sources */,
+				663499B11A70978C0057E30B /* MyTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +426,7 @@
 				663499A81A7096790057E30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		663499A91A7096790057E30B /* Build configuration list for PBXNativeTarget "LongPressMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				663499AB1A7096790057E30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
